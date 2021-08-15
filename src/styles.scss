@@ -1,0 +1,33 @@
+$green: #66CC98;
+$dark: #3F4852;
+
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$primary: $green;
+$secondary: $dark;
+
+//Gradient
+
+@mixin gradient {
+  background: linear-gradient(to right, rgba($primary, 0.95), rgb($secondary, 0.95));
+}
+
+.intro-section {
+  @include gradient;
+  padding: 10rem 0 5rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
