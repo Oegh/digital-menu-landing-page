@@ -1,0 +1,69 @@
+// Heading line
+
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #3F4852;
+}
+
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #66CC98;
+}
+
+.targets {
+    padding: 0 0 5rem 0;
+
+    &-image {
+        max-width: 300%;
+        height: 8rem;
+        margin-bottom: 5rem;
+        padding: 0.5rem;
+        text-align: center;
+        position: relative;
+
+        img {
+            height: 200%;
+            width: 300%;
+            background-color: rgba(0, 0, 0, 0.8);
+            filter: brightness(0.4);
+
+            &:hover {
+                filter: grayscale(120);
+            }
+        }
+    }
+    &-title {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        bottom: 50%;
+        right: 0;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        display: block;
+    }
+
+    &-list {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    &-button {
+        padding-top: 1.5rem;
+    }
+}
