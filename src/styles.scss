@@ -30,4 +30,26 @@ $secondary: $dark;
   height: 100%;
 }
 
+// Heading line
+
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #3F4852;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #66CC98;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
