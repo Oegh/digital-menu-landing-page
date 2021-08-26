@@ -52,4 +52,11 @@ $secondary: $dark;
   background-color: #66CC98;
 }
 
+// @maxin absoluteCenter {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateY(-50%, -50%);
+// }
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

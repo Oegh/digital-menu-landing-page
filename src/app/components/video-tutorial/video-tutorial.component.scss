@@ -1,0 +1,57 @@
+.video-tutorial {
+  font-family: "Poppins", sans-serif;
+}
+
+.video-fluid {
+  width: 70%;
+  height: auto;
+  justify-content: center;
+}
+
+.video-box {
+  position: relative;
+
+  a {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    span {
+      i {
+        font-size: 6rem;
+        color: #66CC98;
+      }
+    }
+  }
+}
+
+.border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid #fff;
+    border-radius: 50%;
+    animation: pulse-border 1.5s linear infinite;
+
+    &-border-1 {
+        animation-delay: 1s;
+    }
+
+    &-border-2 {
+        animation-delay: 1.5s;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

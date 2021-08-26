@@ -1,4 +1,4 @@
-// @import "../../../styles.scss";
+// @use "../../../styles";
 
 .display-2 {
     margin-bottom: 1rem;
@@ -21,6 +21,48 @@
             display: inline-block;
         }
     }
+}
+
+.btn-rounded {
+    position: relative;
+    padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    border: 0.1rem solid rgba(#fff, 0.6);
+    background-color: #fff;
+
+    span {
+        position: absolute;
+        background-color: #66CC98;
+        width: 2.5rem;
+        height: 2.5rem;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+
+        i {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-left: 0.4rem;
+        }
+    }
+
+    &:hover {
+        background: linear-gradient(to right, rgba(#66CC98, 0.95), rgb(#3F4852, 0.95));
+        color: #fff;
+
+        span {
+            background-color: rgb(#000, 0.6);
+        }
+    }
+
+    @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+        @include media-breakpoint-up(xs) {
+            margin-bottom: 1rem;
+        }
 }
 
 

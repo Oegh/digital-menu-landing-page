@@ -62,8 +62,20 @@
             }
         }
 
-        &-pic {
-            max-width: 100%;
-        }
+        
+    }
+    &-pic {
+        max-width: 100%;
+
+        @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+    @include media-breakpoint-up(sm) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    @include media-breakpoint-up(xs) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     }
 }

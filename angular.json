@@ -31,12 +31,14 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "./node_modules/bootstrap/scss/bootstrap.scss",
                             "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+                            "./node_modules/glightbox/dist/css/glightbox.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
-                            "./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+                            "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+                            "./node_modules/glightbox/src/js/glightbox.js"
                         ]
                     },
                     "configurations": {
