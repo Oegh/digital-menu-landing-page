@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import GLightbox from 'glightbox';
-import "@lottiefiles/lottie-player";
 @Component({
   selector: 'app-video-tutorial',
   templateUrl: './video-tutorial.component.html',

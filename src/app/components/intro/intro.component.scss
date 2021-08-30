@@ -4,6 +4,7 @@
     margin-bottom: 1rem;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+    padding-top: 0rem;
 
     &--intro {
         display: inline-block;
@@ -30,6 +31,7 @@
     margin: 0;
     border: 0.1rem solid rgba(#fff, 0.6);
     background-color: #fff;
+    text-decoration: none;
 
     span {
         position: absolute;
@@ -50,7 +52,7 @@
     }
 
     &:hover {
-        background: linear-gradient(to right, rgba(#66CC98, 0.95), rgb(#3F4852, 0.95));
+        background: linear-gradient(to left, rgba(#66CC98, 0.95), rgb(#3F4852, 0.15));
         color: #fff;
 
         span {
@@ -64,6 +66,5 @@
             margin-bottom: 1rem;
         }
 }
-
 
 

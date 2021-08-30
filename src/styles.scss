@@ -28,6 +28,12 @@ $secondary: $dark;
   padding: 10rem 0 5rem 0;
   width: 100%;
   height: 100%;
+
+  @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+  @include media-breakpoint-up(xs) {
+     padding-top: 5rem;
+  }
 }
 
 // Heading line

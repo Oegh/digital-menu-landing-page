@@ -10,6 +10,7 @@ import { IntroComponent } from './components/intro/intro.component';
 import { TargetComponent } from './components/target/target.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { VideoTutorialComponent } from './components/video-tutorial/video-tutorial.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VideoTutorialComponent } from './components/video-tutorial/video-tutori
     IntroComponent,
     TargetComponent,
     FeaturesComponent,
-    VideoTutorialComponent
+    VideoTutorialComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
