@@ -11,6 +11,9 @@ import { TargetComponent } from './components/target/target.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { VideoTutorialComponent } from './components/video-tutorial/video-tutorial.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { PricingComponent } from './components/pricing/pricing.component';
     TargetComponent,
     FeaturesComponent,
     VideoTutorialComponent,
-    PricingComponent
+    PricingComponent,
+    FaqComponent,
+    ContactUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,9 @@
 @import "../../../styles.scss";
 
 .menu {
-    @include gradient;
+    // @include gradient;
+    background-color: transparent !important;
+
 
     li {
         padding: 0 0.7rem;

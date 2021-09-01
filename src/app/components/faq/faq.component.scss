@@ -1,0 +1,14 @@
+$primary: #66CC98;
+
+$accordion-padding-y:                     1.5rem;
+$accordion-padding-x:                     1.5rem;
+
+$accordion-icon-width:                    1.875rem;
+
+$accordion-icon-color:                    #3F4852;
+$accordion-icon-active-color:             $primary;
+
+$accordion-button-active-bg:              #3F4852;
+$accordion-button-active-color:           $primary;
+
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";

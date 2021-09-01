@@ -1,0 +1,68 @@
+.get-in-touch {
+    padding: 4rem 0;
+    background-color: #e9ecef;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(#66CC98, 0.95), rgb(#3F4852, 0.95));
+}
+
+.contact-info {
+    padding: 3rem;
+    margin: 1rem 0;
+
+    &-list {
+        position: relative;
+        list-style-type: none;
+        display: block;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        margin-bottom: 0.7rem;
+
+        li::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f00c";
+            font-weight: 600;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+
+    &-title {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, #66CC98, #3F4852);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.form {
+    padding: 3rem;
+
+    button {
+        border: none;
+        color: #fff;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+}
