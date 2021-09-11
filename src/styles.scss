@@ -66,4 +66,10 @@ $secondary: $dark;
 //   transform: translateY(-50%, -50%);
 // }
 
+body{
+  --navbar-scroll: transparent; 
+  --navbar-scroll-text: white;
+  --navbar-scroll-shadow: none;
+ }
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

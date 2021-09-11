@@ -1,0 +1,17 @@
+<section id="demo" class="demo">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-3 fw-bold">Demo</h1>
+            <div class="heading-line mb-1"></div>
+            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fuga mollitia expedita.</p>
+            <div>
+                <ng-lottie 
+                containerClass="moving-box"
+                [options]="options" 
+                [styles]="styles"
+                (animationCreated)="animationCreated($event)">
+            </ng-lottie>
+            </div>
+        </div>
+    </div>
+</section>

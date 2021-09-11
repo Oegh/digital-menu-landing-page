@@ -14,6 +14,13 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DemoComponent } from './components/demo/demo.component';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -26,12 +33,14 @@ import { FooterComponent } from './components/footer/footer.component';
     PricingComponent,
     FaqComponent,
     ContactUsComponent,
-    FooterComponent
+    FooterComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    LottieModule.forRoot({ player: playerFactory })
 
   ],
   providers: [],
