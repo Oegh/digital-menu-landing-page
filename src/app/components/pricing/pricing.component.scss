@@ -1,94 +1,105 @@
-.pricing {
-    background-color: #e9ecef;
+.btn-2 {
+    background-color: #66CC98;
+    padding: 12px 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    font-weight: 500;
 }
 
-.pricingTable{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin: 0 10px;
-    position: relative;
-    z-index: 1;
-    }
-.pricingTable:before{
-    content: '';
-    background: linear-gradient(to right, #66CC98, #3F4852);
-    border-radius: 30px;
-    position: absolute;
-    left: 0;
-    top: 30px;
-    bottom: 20px;
-    right: 0;
-    z-index: -1;
-    }
-.pricingTable .pricingTable-header{
-    color: #fff;
-    background: #6DECB9;
-    width: 80%;
-    padding: 30px 10px 40px;
-    margin: 0 auto 30px;
-    border-radius: 20px 20px 20px 20px;
-    border-bottom: 7px solid rgb(244, 244, 244);
-    }
-.pricingTable .title{
-    font-size: 35px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
-    }
-.pricingTable .price-value{
-    color: #6DECB9;
-    background: #fff;
-    font-size: 45px;
-    font-weight: 600;
-    width: 100px;
-    height: 100px;
-    line-height: 103px;
-    margin: 0 auto 15px;
-    border-radius: 50%;
-    }
-.pricingTable .pricing-content{
-    padding: 0;
-    margin: 0 0 25px;
-    list-style: none;
-    display: inline-block;
-    }
-.pricingTable .pricing-content li{
-    color: #fff;
-    font-size: 17px;
-    line-height: 43px;
-    text-transform: uppercase;
-    padding: 0 10px;
-    border-bottom: 1px solid #fff;
-    }
-.pricingTable .pricing-content li:last-child{ border-bottom: none; }
-.pricingTable .pricingTable-signup a{
-    color: #fff;
-    background: #6DECB9;
-    font-size: 23px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 7px 18px 5px;
-    border-radius: 15px;
-    display: inline-block;
-    transition: all 0.3s;
-    }
-.pricingTable .pricingTable-signup a:hover{
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 0 5px #1c3340;
-    }
-.pricingTable.blue .pricingTable-header,
-    .pricingTable.blue .pricingTable-signup a{
-    background: #11999E;
-    }
-.pricingTable.blue .price-value{ color: #239EFE; }
+.btn-2:focus {
 
-.pricingTable.dark .pricingTable-header,
-.pricingTable.dark .pricingTable-signup a{
-    background: #3C3C3C;
+}
+
+
+.pricing {
+    background-color: #66CC98;
+    padding: 30px;
+    
+
+    &-plan{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        border-radius: 10px;
     }
-.pricingTable.dark .price-value{ color: #3C3C3C; }
-    @media only screen and (max-width: 990px){
-        .pricingTable{ margin: 0 0 40px; }
+
+    &-header {
+        padding: 20px 30px;
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            color: #000000;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
     }
+
+    &-price {
+        padding: 40px 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex; 
+        justify-content: center;
+        line-height: 0.7;
+
+        .currency {
+            font-size: 16px;
+            font-weight: 300;
+            color: #555555;
+            margin-right: 5px;
+            align-self: flex-start;
+        }
+
+        .price {
+            font-size: 80px;
+            font-weight: 700;
+            color: #66CC98;
+        }
+
+        .period {
+            font-size: 14px;
+            font-weight: 300;
+            color: #555555;
+            margin-right: 5px;
+            align-self: flex-end;
+            text-transform: uppercase;
+        }
+    }
+
+    &-body {
+        padding: 0 30px;
+
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 16px;
+                font-weight: 300;
+                color: #555555;
+                padding: 10px 0 10px 30px;
+                // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                line-height: 26px;
+                position: relative;
+
+                i {
+                    color: #66CC98;
+                    position: absolute;
+                    left: 0;
+                    top: 12px;
+                }
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &-footer {
+        padding: 20px 30px 30px;
+        text-align: center;
+    }
+}

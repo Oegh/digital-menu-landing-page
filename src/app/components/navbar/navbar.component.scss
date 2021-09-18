@@ -16,6 +16,23 @@
             color: $white !important;
             text-transform: capitalize;
             font-weight: 600;
+            position: relative;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            background-color: #fff;
+            transition: all 0.5s ease;
+            transform: scale(0);
+        }
+        a.active::before,
+        a:hover::before {
+            transform: scale(1);
         }
     }
 }

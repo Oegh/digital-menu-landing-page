@@ -12,6 +12,16 @@
     vertical-align: -.125em;
     fill: currentColor;
   }
+
+  .feature {
+    padding: 20px;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+  }
   
   .feature-icon {
     display: inline-flex;
