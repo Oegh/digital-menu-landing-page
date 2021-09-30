@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as EventEmitter from 'events';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +12,8 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit(): void {
-    window.addEventListener('scroll', this.scroll, true)
+    window.addEventListener('scroll', this.scroll, true);
+    // this.collapse();
 
   }
 
@@ -46,9 +47,17 @@ export class NavbarComponent implements OnInit {
 
   
 
-  toggle = (): void => {
-    document.body.style.setProperty('--navbar-scroll', "#66CC98");
-  }
+  // toggle = (): void => {
+  //   document.body.style.setProperty('--navbar-scroll', "#66CC98");
+  // }
+
+  // collapse = (): void => {
+  //   $(".nav-link").on("click", function () {
+  //     $(".navbar-collapse").collapse("hide");
+  // });
+    
+  // };
+  
   
 
 }

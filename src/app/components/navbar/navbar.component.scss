@@ -47,3 +47,16 @@
 .logo {
     height: 2rem;
 }
+
+@media(max-width: 991px) {
+
+    .navbar-nav {
+        background-color: #66CC98;
+        // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+        .nav-item {
+            margin: 0;
+            padding: 5px 15px;
+        }
+    }
+}
