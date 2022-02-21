@@ -1,8 +1,7 @@
 $green: #66CC98;
 $dark: #3F4852;
-
 // scss-docs-start gray-color-variables
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -12,51 +11,44 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
-
+$black: #000;
 $primary: $green;
 $secondary: $dark;
-
-
 //Gradient
-
 @mixin gradient {
-  background: linear-gradient(to right, rgba($primary, 0.95), rgb($secondary, 0.95));
+    background: linear-gradient(to right, rgba($primary, 0.95), rgb($secondary, 0.95));
 }
 
 .intro-section {
-  @include gradient;
-  padding: 10rem 0 5rem 0;
-  width: 100%;
-  height: 100%;
-
-  @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-  @include media-breakpoint-up(xs) {
-     padding-top: 5rem;
-  }
+    @include gradient;
+    padding: 10rem 0 5rem 0;
+    width: 100%;
+    height: 100%;
+    @import "../node_modules/bootstrap/scss/bootstrap.scss";
+    @include media-breakpoint-up(xs) {
+        padding-top: 5rem;
+    }
 }
 
 // Heading line
-
 .heading-line::before {
-  content: "";
-  width: 10rem;
-  height: 0.1rem;
-  display: block;
-  margin: 0 auto;
-  background-color: #3F4852;
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #3F4852;
 }
 
 .heading-line::after {
-  content: "";
-  width: 2rem;
-  padding-top: 0.5rem;
-  height: 0.2rem;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  background-color: #66CC98;
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #66CC98;
 }
 
 // @maxin absoluteCenter {
@@ -65,13 +57,10 @@ $secondary: $dark;
 //   left: 50%;
 //   transform: translateY(-50%, -50%);
 // }
+body {
+    --navbar-scroll: transparent;
+    --navbar-scroll-text: white;
+    --navbar-scroll-shadow: none;
+}
 
-body{
-  --navbar-scroll: transparent; 
-  --navbar-scroll-text: white;
-  --navbar-scroll-shadow: none;
- }
-
-
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
