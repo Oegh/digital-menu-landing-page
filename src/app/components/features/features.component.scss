@@ -1,6 +1,5 @@
 .display-3 {
     font-family: 'Poppins', sans-serif;
-
     &-title {
         font-size: 1.2rem;
         text-transform: capitalize;
@@ -11,9 +10,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
         @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
         @include media-breakpoint-up(lg) {
             font-size: 1.8rem;
         }
@@ -21,7 +18,6 @@
 }
 
 // Border right
-
 .border-right {
     border-right: 0.1rem solid #dee2e6;
     height: 100%;
@@ -30,52 +26,58 @@
 .features {
     position: relative;
     padding: 1rem 0;
-
     &-content {
         padding: 1rem;
         margin-top: 0;
-
         p {
             font-size: 0.8rem;
-
             @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-        @include media-breakpoint-up(lg){
-            font-size: 1rem;
+            @include media-breakpoint-up(lg) {
+                font-size: 1rem;
+            }
         }
-        }
-
-
-
         @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(lg) {
             margin-top: 5rem;
         }
-
         .icon {
             font-size: 1.5rem;
             color: #66CC98;
-
-            @include media-breakpoint-up(lg){
+            @include media-breakpoint-up(lg) {
                 font-size: 2.5rem;
             }
         }
-
-        
     }
     &-pic {
         max-width: 100%;
-
         @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-    // @include media-breakpoint-up(sm) {
-    //     margin-left: 1rem;
-    //     margin-right: 1rem;
-    // }
-    @include media-breakpoint-up(xs) {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        @include media-breakpoint-up(xs) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
-  }
+}
+
+.feature-packed-ul {
+    ul {
+        list-style: none;
+        li {
+            font-size: 16px;
+            font-weight: 300;
+            color: #555555;
+            padding: 10px 0 0px 30px;
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            line-height: 26px;
+            position: relative;
+            i {
+                color: #66CC98;
+                position: absolute;
+                left: 0;
+                top: 13px;
+            }
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    }
 }

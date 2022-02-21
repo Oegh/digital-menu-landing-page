@@ -1,35 +1,36 @@
 <nav class="navbar navbar-expand-lg navbar-light menu fixed-top" id="navbar-example2">
     <div class="container">
-      <a class="navbar-brand" href="#">
-          <img src="../../../assets/images/logo.png" class="logo" alt="logo image">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/images/isolated-monochrome-white.svg" class="logo" alt="logo image">
+        </a>
+        <!-- <button class="navbar-toggler" type="button" (click)="hideScrollbar" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+        <button #navbarToggler class="navbar-toggler" type="button" (click)="hideScrollbar()" data-bs-toggle="collapse" [attr.data-bs-target]="navbarCollapsed" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#target">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#faq">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="btn btn-outline-primary btn-gradient" href="#" role="button">Download</a>
-          </li> -->
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" (click)="hideNavBar()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#target" (click)="hideNavBar()">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features" (click)="hideNavBar()">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing" (click)="hideNavBar()">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq" (click)="hideNavBar()">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" (click)="hideNavBar()">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>

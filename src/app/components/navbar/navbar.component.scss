@@ -1,5 +1,4 @@
 @import "../../../styles.scss";
-
 .menu {
     // @include gradient;
     // background-color: transparent !important;
@@ -8,17 +7,14 @@
     color: var(--navbar-scroll-text);
     -webkit-box-shadow: var(--navbar-scroll-shadow);
     box-shadow: var(--navbar-scroll-shadow);
-
     li {
         padding: 0 0.7rem;
-    
         a {
             color: $white !important;
             text-transform: capitalize;
             font-weight: 600;
             position: relative;
         }
-
         a::before {
             content: '';
             position: absolute;
@@ -38,7 +34,7 @@
 }
 
 .btn-gradient {
-    &:hover{
+    &:hover {
         @include gradient;
         color: $white;
     }
@@ -49,11 +45,9 @@
 }
 
 @media(max-width: 991px) {
-
     .navbar-nav {
         background-color: #66CC98;
         box-shadow: var(--navbar-responsive-shadow);
-
         .nav-item {
             margin: 0;
             padding: 5px 15px;
