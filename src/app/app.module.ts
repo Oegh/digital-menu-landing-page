@@ -17,6 +17,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { RecaptchaModule, RecaptchaFormsModule} from 'ng-recaptcha';
+import { FormsModule }   from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 export function playerFactory() {
   return player;
@@ -40,8 +45,12 @@ export function playerFactory() {
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    LottieModule.forRoot({ player: playerFactory })
-
+    LottieModule.forRoot({ player: playerFactory }),
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
