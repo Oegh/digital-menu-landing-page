@@ -34,11 +34,15 @@
                     <div class="pricing-plan">
                         <div class="pricing-header">
                             <h3>premium</h3>
+                            <div id="recommendedBadge" style="display: flex; justify-content: center;">
+                                <span class="badge rounded-pill bg-success me-2" [hidden]="hidden">Recommended</span>
+                                <span class="badge rounded-pill bg-danger" [hidden]="hidden">16% off</span>
+                            </div>
                         </div>
                         <div class="pricing-price">
                             <span class="currency">$</span>
-                            <span class="price">5.99</span>
-                            <span class="period">/monthly</span>
+                            <span id="premiumPrice" class="price">5.99</span>
+                            <span id="premiumPeriod" class="period">/monthly</span>
                         </div>
                         <div class="pricing-body">
                             <ul>
@@ -48,9 +52,11 @@
                                 <li><i class="fas fa-check"></i> Manage up to 3 business in same app </li>
                                 <li><i class="fas fa-check"></i> Get email subscriptions from customers </li>
                                 <li><i class="fas fa-check"></i> Without Ads </li>
+                                <li [hidden]="hidden"><i class="fas fa-check" [hidden]="hidden"></i> 7 days free trial & 16% discount </li>
                             </ul>
                         </div>
                         <div class="pricing-footer">
+                            <button id="annuallyPriceBtn" type="button" (click)="setAnnually()" class="btn btn-outline-success me-3">Annual</button>
                             <a href="https://play.google.com/store/apps/details?id=com.codi.digitalmenu" class="btn btn-outline-success">Download app</a>
                         </div>
                     </div>

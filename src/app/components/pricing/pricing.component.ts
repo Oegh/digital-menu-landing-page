@@ -7,9 +7,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
+  private annually = false;
+  hidden = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setAnnually(): void {
+    var anuallyPriceBtn = document.getElementById('annuallyPriceBtn');
+    var premiumPrice = document.getElementById('premiumPrice');
+    var premiumPeriod = document.getElementById('premiumPeriod');
+    var recommendedBadge = document.getElementById('recommendedBadge');
+
+    if(this.annually) {
+      this.annually = false;
+      this.hidden = true;
+      anuallyPriceBtn?.classList.remove('btn-success');
+      anuallyPriceBtn?.classList.add('btn-outline-success');
+
+      if(premiumPrice != null) {
+        premiumPrice.innerText = '5.99';
+      }
+      
+      if(premiumPeriod != null) {
+        premiumPeriod.innerText = '/monthly';
+      }
+
+      if(recommendedBadge != null) {
+        recommendedBadge.hidden = true;
+      }
+    }
+    else {
+      this.annually = true;
+      this.hidden = false;
+      anuallyPriceBtn?.classList.remove('btn-outline-success');
+      anuallyPriceBtn?.classList.add('btn-success');
+
+      if(premiumPrice != null) {
+        premiumPrice.innerText = '60';
+      }
+      
+      if(premiumPeriod != null) {
+        premiumPeriod.innerText = '/anually';
+      }
+
+      if(recommendedBadge != null) {
+        recommendedBadge.hidden = false;
+      }
+    }
+
   }
 
 }
