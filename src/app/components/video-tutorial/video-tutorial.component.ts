@@ -14,9 +14,9 @@ export class VideoTutorialComponent implements OnInit {
   ngOnInit(): void {
 
     this.lightbox = GLightbox({
-      'href': '../../../assets/video/pexels-lisa-7934113.mp4',
+      'href': 'https://youtu.be/23KnEn5F1f0',
       'type': 'video',
-      'source': 'local', //vimeo, youtube or local
+      'source': 'youtube', //vimeo, youtube or local
       'width': 900,
       'autoplayVideos': true,
       'touchNavigation': false,

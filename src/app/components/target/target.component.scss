@@ -1,29 +1,22 @@
 .targets {
     padding: 0 0 5rem 0;
-    // width: 100%;
-    // height: 100%;
-    // background-color: #66CC98;
-    // clip-path: polygon(100% 0, 100% 0, 100% 99%, 0 100%);
-    // position: relative;
-    // z-index: -1;
 }
 
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
-  }
+}
 
-  .feature {
+.feature {
     padding: 20px;
-
     &:hover {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         background-color: #ffffff;
         border-radius: 10px;
     }
-  }
-  
-  .feature-icon {
+}
+
+.feature-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -33,17 +26,20 @@
     font-size: 2rem;
     color: #fff;
     border-radius: .75rem;
-  }
-  .icon-link {
+}
+
+.icon-link {
     display: inline-flex;
     align-items: center;
-  }
-  .icon-link > .bi {
+}
+
+.icon-link>.bi {
     margin-top: .125rem;
     margin-left: .125rem;
     transition: transform .25s ease-in-out;
     fill: currentColor;
-  }
-  .icon-link:hover > .bi {
+}
+
+.icon-link:hover>.bi {
     transform: translate(.25rem);
-  }
+}

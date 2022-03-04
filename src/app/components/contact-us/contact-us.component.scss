@@ -4,13 +4,12 @@
 }
 
 .gradient {
-  background: linear-gradient(to right, rgba(#66CC98, 0.95), rgb(#3F4852, 0.95));
+    background: linear-gradient(to right, rgba(#66CC98, 0.95), rgb(#1DB1BA, 0.95));
 }
 
 .contact-info {
     padding: 3rem;
     margin: 1rem 0;
-
     &-list {
         position: relative;
         list-style-type: none;
@@ -18,7 +17,6 @@
         padding-top: 0.5rem;
         padding-left: 0.5rem;
         margin-bottom: 0.7rem;
-
         li::before {
             font-family: "Font Awesome 5 Free";
             content: "\f00c";
@@ -27,12 +25,10 @@
             font-size: 1.2rem;
         }
     }
-
 }
 
 .display-3 {
     font-family: 'Poppins', sans-serif;
-
     &-title {
         font-size: 1.2rem;
         text-transform: capitalize;
@@ -43,10 +39,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
-        @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-        @include media-breakpoint-up(lg) {
+        @media (min-width: 992px) {
             font-size: 1.8rem;
         }
     }
@@ -54,29 +47,24 @@
 
 .form {
     padding: 3rem;
-
     button {
         border: none;
         color: #fff;
-
         a {
             color: #fff;
             text-decoration: none;
             text-transform: capitalize;
         }
-
         &:hover {
             color: #66CC98;
             background-color: #ffffff;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
     }
-
     textarea {
         height: 140px;
         padding-top: 12px;
     }
-
     &-control {
         height: 52px;
         border: 1px solid transparent;
@@ -87,7 +75,6 @@
         background-color: #ffffff;
         transition: all 0.5s ease;
     }
-
     &-control:focus {
         border-color: #66CC98;
     }

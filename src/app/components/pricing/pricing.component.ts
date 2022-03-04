@@ -28,7 +28,7 @@ export class PricingComponent implements OnInit {
       anuallyPriceBtn?.classList.add('btn-outline-success');
 
       if(premiumPrice != null) {
-        premiumPrice.innerText = '5.99';
+        premiumPrice.innerText = '9.99';
       }
       
       if(premiumPeriod != null) {
@@ -46,7 +46,7 @@ export class PricingComponent implements OnInit {
       anuallyPriceBtn?.classList.add('btn-success');
 
       if(premiumPrice != null) {
-        premiumPrice.innerText = '60';
+        premiumPrice.innerText = '100';
       }
       
       if(premiumPeriod != null) {

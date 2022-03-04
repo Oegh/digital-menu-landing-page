@@ -1,14 +1,11 @@
-$primary: #66CC98;
-
-$accordion-padding-y:                     1.5rem;
-$accordion-padding-x:                     1.5rem;
-
-$accordion-icon-width:                    1.875rem;
-
-$accordion-icon-color:                    #3F4852;
-$accordion-icon-active-color:             $primary;
-
-$accordion-button-active-bg:              #3F4852;
-$accordion-button-active-color:           $primary;
-
-@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+.accordion-button {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    &:not(.collapsed) {
+        color: #66CC98;
+        background-color: #3F4852;
+        &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2366CC98'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+    }
+}

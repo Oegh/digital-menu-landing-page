@@ -6,42 +6,29 @@
 .contact-box {
     position: relative;
     font-weight: 600;
-
     &-icon {
         width: 4rem;
         stroke: #66CC98;
         padding: 0.5rem;
-
-        @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-        @include media-breakpoint-up(sm) {
+        @media (min-width: 576px) {
             width: 4rem;
         }
     }
-
     &-info {
         padding: 0.4rem;
-
         &-title {
             color: #fff;
             text-decoration: none;
             font-size: 1rem;
-
-            @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-            @include media-breakpoint-up(sm) {
+            @media (min-width: 576px) {
                 font-size: 1.4rem;
             }
         }
-
         &-subtitle {
             color: #6c757d;
             text-decoration: none;
             font-size: 0.8rem;
-
-            @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-            @include media-breakpoint-up(sm) {
+            @media (min-width: 576px) {
                 font-size: 1rem;
             }
         }
@@ -49,17 +36,12 @@
 }
 
 .footer-social-media {
-
     a {
         color: #fff;
-
         i {
             font-size: 1rem;
             margin-left: 1rem;
-
-            @import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
-
-            @include media-breakpoint-up(sm) {
+            @media (min-width: 576px) {
                 font-size: 1.6rem;
             }
         }
@@ -70,15 +52,12 @@
     display: block;
     list-style-type: none;
     position: relative;
-
     li {
         margin-bottom: 0.5rem;
         text-decoration: none;
-
         a {
             color: #fff;
             text-decoration: none;
-
             &:hover {
                 color: #66CC98;
             }
@@ -88,15 +67,12 @@
 
 .footer-bottom {
     background-color: #000;
-
     &-copyright {
         color: #6c757d;
         font-weight: 400;
-
         a {
             color: #dee2e6;
             text-decoration: none;
-
             &:hover {
                 color: #66CC98;
                 text-decoration: underline;
@@ -113,7 +89,6 @@
     right: 1.875rem;
     bottom: 1.875rem;
     z-index: 9999;
-
     i {
         color: #fff;
         font-size: 1rem;

@@ -8,11 +8,11 @@
     font-weight: 500;
 }
 
-.btn-2:focus {}
-
 .pricing {
     background-color: #66CC98;
-    padding: 30px;
+    @media screen and (min-width: 767px) {
+        padding: 30px;
+    }
     &-plan {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         background-color: #ffffff;
